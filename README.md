@@ -9,6 +9,7 @@ Table of Contents:
 - React Loader Spinner
 - React Router DOM
 - UUID
+- Custom Responsive Navber
 
 ### Setup Template
 
