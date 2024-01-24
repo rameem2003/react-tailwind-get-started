@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import Container from "./Container";
 import { FaBars } from "react-icons/fa6";
 
-const Naber = () => {
+const Navber = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <>
-      <nav className=" fixed w-full bg-slate-300 p-3 z-[10000]">
+      <nav className=" w-full bg-slate-300 p-3 z-[10000]">
         <Container className=" max-w-[1185px] flex items-center justify-between">
           <img src="/vite.svg" alt="" />
           <ul
@@ -26,7 +26,9 @@ const Naber = () => {
               </ul>
             </li>
             <li className=" my-3 md:m-0 lg:m-0">
-              <a href="#">Repository</a>
+              <a href="https://github.com/rameem2003/react-tailwind-get-started">
+                Repository
+              </a>
             </li>
             <li className=" my-3 md:m-0 lg:m-0">
               <a href="#">Content</a>
@@ -34,9 +36,13 @@ const Naber = () => {
           </ul>
 
           <div className=" flex items-center gap-3">
-            <button className=" bg-slate-700 px-7 py-2 font-medium text-white rounded-md duration-150 hover:bg-slate-900">
+            <a
+              href="https://github.com/rameem2003"
+              target="_blank"
+              className=" bg-slate-700 px-7 py-2 font-medium text-white rounded-md duration-150 hover:bg-slate-900"
+            >
               Github
-            </button>
+            </a>
 
             <FaBars
               onClick={() => setToggle(!toggle)}
@@ -50,4 +56,4 @@ const Naber = () => {
   );
 };
 
-export default Naber;
+export default Navber;

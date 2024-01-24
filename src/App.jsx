@@ -6,14 +6,14 @@ import { FaReact } from "react-icons/fa";
 import { ProgressBar } from "react-loader-spinner";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Naber from "./components/Naber";
+import Navber from "./components/Navber";
 
 function App() {
   const notify = () => toast(`React + Tailwind CSS`);
   return (
     <>
       <ToastContainer />
-      <Naber />
+      <Navber />
       <div className=" bg-slate-700 h-screen flex items-center justify-center flex-col">
         <div>
           <a href="https://react.dev" target="_blank">
